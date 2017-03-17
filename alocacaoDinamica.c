@@ -18,7 +18,7 @@ int main(){
 
     //-----------------------------------------
     //ALOCACAO DINAMICA
-    int n,i;
+    int n;
     printf("Insira o numero de elementos a serem processados:\n");
     scanf("%d",&n);
 
