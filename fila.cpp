@@ -19,6 +19,7 @@ bool fila_cheia();
 bool fila_aloca(int valor);
 bool fila_retira(int &valor);
 int  fila_get();
+int  fila_tamanho();
 
 int main(){
     int valor,i=0;
@@ -29,9 +30,10 @@ int main(){
 
     while(fila_aloca(rand() %10));
     //ALOCANDO VALORES
+    printf("\nQUANTIDADE DE ITENS NA FILA: %d \n",fila_tamanho());
 
     while(fila_retira(valor)){
-        printf("VALOR NA FILA %d\n",valor);
+        printf("\n %d \n",valor);
     }
     //RETIRANDO E IMPRIMINDO VALORES
     return 0;
@@ -92,3 +94,6 @@ int fila_get(int &valor){
     }
 }
 
+int fila_tamanho(){
+    return (f.tras-f.frente)+1;
+}
