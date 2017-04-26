@@ -6,6 +6,8 @@
 //BIBLIOTECAS
 
 #define MAX 10
+#define true 1
+#define false 0
 //DEFININDO O TAMANHO MAXIMO DA PILHA ESTATICA
 
 typedef struct{
@@ -24,7 +26,7 @@ void pilha_construtor(){
 // OBS: O TOPO EH (-1) POIS
 // ZERO(0) EH UMA POSICAO VALIDA EM UM VETOR
 
-bool pilha_vazia(){
+int pilha_vazia(){
     if(p.topo==-1){
         return true;
     }
@@ -40,7 +42,7 @@ int pilha_tamanho(){
 //RETORNA A POSICAO DO TOPO DA PILHA
 //OBS: (TOPO +1) POIS A PILHA INICIA NA POSICAO (-1)
 
-bool pilha_cheia(){
+int pilha_cheia(){
     if(p.topo==(MAX-1)){
         return true;
     }
@@ -51,7 +53,7 @@ bool pilha_cheia(){
 //VERIFICA SE A PILHA ESTA CHEIA
 
 
-bool pilha_push(int valor){
+int pilha_push(int valor){
     if (pilha_cheia()){
         return false;
     }
@@ -63,7 +65,7 @@ bool pilha_push(int valor){
 }
 //PUSH INSERE NA PILHA
 
-bool pilha_pop(int &valor){
+int pilha_pop(int &valor){
     if(pilha_vazia()){
         return false;
     }
@@ -75,7 +77,7 @@ bool pilha_pop(int &valor){
 }
 //POP TIRA DA PILHA
 
-bool pilha_get(int &valor){
+int pilha_get(int &valor){
     if(!pilha_vazia()){
         return false;
     }
