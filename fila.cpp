@@ -5,6 +5,8 @@
 #include <time.h>
 
 #define MAX 10
+#define true 1
+#define false 0
 
 typedef struct{
     int frente;
@@ -14,10 +16,10 @@ typedef struct{
 
 fila f;
 void fila_construtor();
-bool fila_vazia();
-bool fila_cheia();
-bool fila_aloca(int valor);
-bool fila_retira(int &valor);
+int fila_vazia();
+int fila_cheia();
+int fila_aloca(int valor);
+int fila_retira(int &valor);
 int  fila_get();
 int  fila_tamanho();
 
@@ -44,7 +46,7 @@ void fila_construtor(){
     f.tras=-1;
 }
 
-bool fila_vazia(){
+int fila_vazia(){
     if(f.frente>f.tras){
         return true;
     }
@@ -53,7 +55,7 @@ bool fila_vazia(){
     }
 }
 
-bool fila_cheia(){
+int fila_cheia(){
     if(f.tras==(MAX-1)){
         return true;
     }
@@ -62,7 +64,7 @@ bool fila_cheia(){
     }
 }
 
-bool fila_aloca(int valor){
+int fila_aloca(int valor){
     if(fila_cheia()){
         return false;
     }
@@ -73,7 +75,7 @@ bool fila_aloca(int valor){
     }
 }
 
-bool fila_retira(int &valor){
+int fila_retira(int &valor){
     if(fila_vazia()){
         return false;
     }
@@ -96,4 +98,6 @@ int fila_get(int &valor){
 
 int fila_tamanho(){
     return (f.tras-f.frente)+1;
+
 }
+
