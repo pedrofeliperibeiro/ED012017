@@ -1,10 +1,10 @@
-![CSCore Logo](http://capitalcode.com.br/assets/img/capitaldefault.png)
+![CAPITAL CODE-LOGO](http://capitalcode.com.br/assets/img/capitaldefault.png)
 
 
 # Capital Code- A sua Plataforma de Cursos Online #
 
 
-[![NuGet-Release](https://img.shields.io/nuget/vpre/CSCore.Ffmpeg.svg?label=%22Capital%20Code%22)](https://www.nuget.org/packages/CSCore.Ffmpeg/)
+[![VERSÃO DO SW](https://img.shields.io/badge/Capital%20Code--%20version-v.1.1.7-blue.svg/)
 
 A **Capital Code** é uma start-up responsável por uma plataforma de incentivo ao ensino de Tecnologia da Informação, que leva o mesmo nome. O projeto consiste em levar conhecimento para o público da TI e áreas afins, por meio de ferramentas tais como: vídeo-aulas, apostilas, artigos, workshops e projetos variados.
 
